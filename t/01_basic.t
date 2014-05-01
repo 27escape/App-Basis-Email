@@ -10,14 +10,13 @@ use 5.12.0;
 use strict;
 use warnings;
 use Test::More tests => 6;
-use File::Slurp qw(read_file);
 use Text::Markdown qw(markdown);
 use Try::Tiny;
 
 BEGIN { use_ok('App::Basis::Email'); }
 
 # -----------------------------------------------------------------------------
-my $logo_img = "https://db.tt/9Ge7rmkt";
+my $logo_img = "http://static.bbci.co.uk/frameworks/barlesque/2.60.9/orb/4/img/bbc-blocks-dark.png";
 my $markdown = <<EOD ;
 # Basic Markdown
 
